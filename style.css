@@ -1,0 +1,141 @@
+
+
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+    font-family:  system-ui;
+	margin:0;
+
+
+}
+:root{
+ --mainColor:#089f0f;
+}
+.header {
+	width:80%;
+	height: 500px;
+	margin: 20px auto;
+	border: 1px solid #22df2c;
+	border-radius: 7px;
+	-webkit-border-radius:7px;
+	-moz-border-raduis:7px;
+	background-color: white;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--mainColor);
+	padding: 15px;
+	border:1px solid transparent;
+	color: white;
+	border-radius: 11px 11px 0 0;
+}
+header .col:first-child{
+	display: flex;
+}
+header .col .text{
+	margin-left: 10px;
+}
+header .col .text h1{
+	font-size: 25px;
+	font-weight: 600;
+}
+header .col .text h3{
+	font-size: 12px;
+}
+img{
+	width: 40px;
+}
+.parent {
+	display: flex;
+	padding: 15px;
+	align-items: center;
+
+}
+.parent .content {
+	margin:25px;
+}
+.parent .content ul{
+	list-style: none;
+	position: relative;
+
+}
+
+.parent .content ul li{
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    gap: 10px;
+
+}
+.parent .content ul li:first-child:before{
+
+    content: "";
+    width: 35px;
+    height: 2px;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: 10px;
+    left: -37px;
+    position: absolute;
+}
+.parent .content ul li:first-child{
+    color: var(--mainColor);
+}
+.content img{
+	width: 400px;
+	padding: 15px;
+}
+.content .text{
+	line-height: 1.5;
+	margin: 15px auto
+}
+
+.content .text span{
+	font-size: 16px;
+	font-weight: 600;
+}
+.content h1{
+	font-size: 23px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: cursive;
+    margin: 15px auto;
+    position: relative;
+}
+.content  h1:after{
+
+	content: "";
+    background-color: var(--mainColor);
+    width: 46px;
+    height: 3px;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    border: 1px solid var(--mainColor);
+    border-radius: 8px;
+}
+.content  h1:before{
+	content: "";
+    width: 43px;
+    height: 2px;
+    position: absolute;
+    background-color: var(--mainColor);
+    top: 36px;
+    left: 46px;;
+}
+
+@media(max-width: 772px){
+	.header {
+	width:100%;
+	height: 100vh;
+	margin: 20px auto;
+	border: 1px solid #22df2c;
+	border-radius: 7px;
+	-webkit-border-radius:7px;
+	-moz-border-raduis:7px;
+	background-color: white;
+}
+
+}
